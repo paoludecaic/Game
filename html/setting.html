@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="../css/setting.css">
+</head>
+<body>
+    <div class="header">
+		<!-- 头部部分 -->
+        <div class="logo"><img src="../images/logo.png" width="50px" height="50px"></div>
+        <div class="title">美食天堂</div>
+        <a href="index.html"><span>回到首页</span></a>
+        <div class="buy"><a href="gwc.html">我的购物车</a><div>1</div></div>
+    </div>
+    <div class="main">
+        <div class="sidebar">
+			<!-- 右边侧边栏部分 -->
+            <h3>账户设置&nbsp;></h3>
+			<hr class="setting2">
+            <div class="account">
+				<ul>
+					<li>个人信息</li>
+					<li>账户安全</li>
+					<li>浏览历史</li>
+					<li>支付设置</li>
+				</ul>
+			</div>
+			<h4>订单中心</h4>
+			<div class="setting1">
+				<ul>
+					<li>我的订单</li>
+					<li>评价晒单</li>
+				</ul>
+			</div>
+			<hr class="setting2">
+			<h4>福利/奖品</h4>
+			<div class="setting1">
+				<ul>
+					<li>可用优惠卷</li>
+					<li>会员福利</li>
+					<li>抽奖信息</li>
+					<li>红包领取</li>
+				</ul>
+			</div>
+			<hr class="setting2">
+			<h4>我的关注</h4>
+			<div class="setting1">
+				<ul>
+					<li>收藏菜品</li>
+					<li>关注达人</li>
+				</ul>
+			</div>
+			<hr class="setting2">
+        </div>
+		<div class="main1">
+			<div class="user">
+				<img src="../images/user.jpeg">
+				<span>用户220134</span><span>大会员</span>
+			</div>
+			<div class="content1">
+				<div  class="ring">
+					<div class="circle-big">
+						<div class="ring-left"></div>
+						<div class="ring-right"></div>
+					</div>
+					<div class="circle-small">
+						<span>75%</span>
+					</div>
+					<span>账户安全度</span>
+				</div>
+				<div  class="ring">
+					<div class="circle-big">
+						<div class="ring-left" style="height: 0;"></div>
+						<div class="ring-right" style="height: 50%;"></div>
+					</div>
+					<div class="circle-small">
+						<span>24%</span>
+					</div>
+					<span>当月所用额度</span>
+				</div>
+				<div  class="ring">
+					<div class="circle-big">
+						<div class="ring-left" style="height: 100%;"></div>
+						<div class="ring-right" style="height: 100%;"></div>
+					</div>
+					<div class="circle-small">
+						<span id="span">100%</span>
+					</div>
+					<span>信誉分</span>
+				</div>
+			</div>
+			<div class="content2">
+				<span>浏览历史</span>
+				<span>订单查询</span>
+				<span>我的收藏</span>
+				<hr class="setting2">
+				<div class="search">
+					<div>
+						<form> <!--  搜索框 -->	
+							 <input  type="text" style="border-radius: 12px;" placeholder="请输入你所要查询的单号">
+						 </form>
+					</div>	
+					 <div class="searchlogo">
+						<img src="../images/search1.png" width="20px" height="20px">
+					</div>
+					</div>
+			</div>
+			<div id="error">很抱歉，您目前并没有订单，可能是系统繁忙导致的错误，请刷新页面后重试</div>
+		</div>
+
+    </div>
+    <div class="footer">
+		<div id="gotop"><img src="../images/return.jpg"></div>
+		<!-- 返回顶部的按钮，用了图片为引导-->
+		<p class="footertxt">本网站只用于学习用途，不参与任何商业活动,如有需要请发送信息至我们的邮箱</p>
+    </div>
+    <script>
+        	window.addEventListener("scroll",handle)
+		function handle(){
+			var oTop=document.body.scrollTop||document.documentElement.scrollTop
+			if(oTop>=200){
+				gotop.style.display="block"
+			}
+			else{
+				gotop.style.display="none"
+			}
+			gotop.onclick=function(){
+				window.scrollTo({
+					top:0,
+					behavior:"smooth"//返回顶部
+				})
+			}
+		}
+    </script>
+</body>
+</html>

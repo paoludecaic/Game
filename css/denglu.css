@@ -1,0 +1,136 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+}
+input{
+    outline: none;
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    background: linear-gradient(120deg,#e0c3fc 0%,#8ec5fc 100%);
+}
+.box{
+    margin: auto;
+    width: 800px;
+    height: 450px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.2);
+}
+.pre-box{
+    width: calc(800px/2);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border: 4px;
+    background-color:#d3b4f0;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
+}
+.pre-box h1{
+    color:#fff;
+    margin-top: 80px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+}
+.pre-box p{
+    color:#fff;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.login-from .register-from{
+    height: 100%;
+}
+.login-from {
+    width: 400px;
+}
+.register-from{
+    width: 400px;
+}
+.title-box{
+    height: 150px;
+    line-height: 200px;
+}
+.title-box h1{
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    letter-spacing: 7px;
+    font-size: 25px;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input{ 
+    width: 60%;
+    height: 30px;
+    margin-top: 15px;
+    text-indent: 4px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    border-bottom:1px solid rgb(144,129,244) ;
+}
+input:focus{
+    color: black;
+}
+input:focus::placeholder{
+    opacity: 0;
+}
+.btn-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+button{
+    line-height: 30px;
+    border:none;
+    margin:0 8px;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    background-image: linear-gradient(120deg, #a175ca 0%,#6196cc 100%);
+    color: rgb(0, 0, 0);
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: 0 0 3rem -0.5rem rgba(153, 143, 54, 0.6);
+}
+button a:hover{
+	display: block;
+    color: #e0c3fc;
+}
+a, a:visited, a:link{
+    color: #000;
+}
+.btn-box p{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+.btn-box p:hover{
+    cursor: pointer;
+    border-bottom:1px solid #fff;
+}

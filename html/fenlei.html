@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fenlei.css">
+	<link rel ="icon" href ="../images/logo.jpg" type ="image/x-icon"/>
+    <script src="../js/all.js"></script>
+	<title>分类</title>
+</head>
+<body>
+	<div>
+	<div class="header"> 
+		<div class="headerone">
+			<div class="logo"><img src="../images/logo.png" width="50px" height="50px"></div>
+		<!-- logo -->
+		<div class="title">美食天堂</div>
+		<div class="search">
+		<div>
+			<form> <!--  搜索框 -->	
+				 <input  type="text" style="border-radius: 12px;" placeholder="请输入你所要查询的内容">
+			 </form>
+		</div>	
+		 <div class="searchlogo">
+			<img src="../images/search1.png" width="30px" height="30px">
+		</div>
+		</div>
+		<div class="navgation">	
+				<div class="menubox" onclick="mySwich()"><img class="menu" src="../images/menu.png" width="50px" height="50px"></div>
+				<div class="navbar">
+				<div class="userimg"><img src="../images/user.jpeg">
+					<!-- 用户头像 -->
+						<span>用户220134</span>
+				</div>
+				<div class="setting">
+					<ul>
+					<li><a href="index.html"><span>首页</span></a></li>
+					<li><a href="#"><span>我的收藏</span></a></li>
+					<li><a href="gwc.html"><span>购物车</span></a></li>
+					<li><a href="setting.html"><span>个人主页</span></a></li>
+					<li><a href="denglu.html"><span>退出登录</span></a></li>
+					</ul>
+				</div>
+				</div>
+			  </div> 
+		</div>
+		<div class="headertwo">
+		<div style="height: 20px;"></div>
+		<div class="nav">
+			<!-- 导航栏部分 -->
+			<div class="navlist">
+			<li>
+				<a href="index.html">首页</a>
+			</li>
+			<li>
+				<a href="tuijian.html">推荐</a>	
+			</li>
+			<li>
+				<a href="#">排行</a>
+			</li>
+			<li>
+				<a href="fenlei.html" >分类</a>
+			</li>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="main">
+		<!-- 利用js的部分元素打造的伪随机 -->
+		<div class="random"><h4>不知道吃什么？点击旁边的按钮试试<span id="suggest">随机推荐</span></h4></div>
+		<div class="main1">
+			<!-- 主要的推荐部分 -->
+			<div class="a1">常见菜式</div>
+			<div class="a2"><span>热菜</span><span>凉菜</span><span>汤羹</span><span>主食</span><span>西餐</span><span>自制食材</span><span>烤箱菜</span><span>海鲜</span><span>饮品</span><span>烘焙</span><span>小吃</span></div>
+		</div>
+		<div class="main1">
+			<div class="a1">饮食方式</div>
+			<div class="a2"><span>素食</span><span>荤菜</span><span>应季菜谱</span><span>高颜值</span><span>小清新</span></div>
+		</div>
+		<div class="main1">
+			<div class="a1">中式菜系</div>
+			<div class="a2"><span>云南菜</span><span>北京菜</span><span>东北菜</span><span>新疆菜</span><span>客家菜</span><span>台湾美食</span></div>
+		</div>
+		<div class="main1">
+			<div class="a1">外国美食</div>
+			<div class="a2"><span>日本料理</span><span>韩国料理</span><span>西班牙菜</span><span>英国菜</span><span>泰国菜</span></div>
+		</div>
+		<div class="main1">
+			<div class="a1">烘焙</div>
+			<div class="a2"><span>蛋糕</span><span>面包</span><span>饼干</span><span>披萨</span><span>曲奇</span></div>
+		</div>
+				<div class="main1">
+			<div class="a1">所需时间</div>
+			<div class="a2"><span>10分钟</span><span>半小时</span><span>三刻钟</span><span>一天</span><span>数天</span></div>
+		</div>
+		<div class="main1">
+			<div class="a1">制作难度</div>
+			<div class="a2"><span>简单</span><span>普通</span><span>高级</span><span>神级</span></div>
+		</div>
+		<!-- 隐藏下方的元素，点击展开时使元素显现 -->
+		<div id="spread"><span>展开</span></div>
+		<div class="main1 main2">
+			<div class="a1">场景</div>
+			<div class="a2"><span>早餐</span><span>下午菜</span><span>快餐</span><span>宿舍时代</span><span>野餐</span></div>
+		</div>
+		<div class="main1 main2">
+			<div class="a1">适宜人群</div>
+			<div class="a2"><span>孕妇</span><span>产妇</span><span>婴儿</span><span>儿童</span><span>老人</span><span>青少年</span></div>
+		</div>
+		<div class="main1 main2">
+			<div class="a1">节日食俗</div>
+			<div class="a2"><span>立冬</span><span>冬至</span><span>元宵</span><span>元宵</span><span>大暑</span> <span>立秋</span><span>霜降</span><span>小雪</span><span>母亲/父亲节</span><span>儿童节</span><span>七夕</span><span>重阳节</span><span>年夜饭</span></div>
+		</div>
+		<div class="main1 main2">
+			<div class="a1">甜品/饮品</div>
+			<div class="a2"><span>冰品</span><span>果汁</span><span>糖水</span><span>布丁</span><span>酸奶</span><span>冰淇淋</span><span>咖啡</span><span>豆浆</span></div>
+		</div>
+		<div class="main1 main2">
+			<div class="a1">菜品口味</div>
+			<div class="a2"><span>辣味</span><span>酸系</span><span>原味</span><span>怪味</span><span>奶香</span><span>酱香</span><span>清淡</span><span>果味</span><span>其他</span></div>
+		</div>
+	</div>
+    <div class="footer">
+		<div id="gotop"><img src="../images/return.jpg"></div>
+		<!-- 返回顶部的按钮，用了图片为引导-->
+		<p class="footertxt">本网站只用于学习用途，不参与任何商业活动,如有需要请发送信息至我们的邮箱</p>
+		<p class="footertxt">京公网安备 XCXXX号 | 京ICP备11041704号 | ICP | 互联网药品信息服务资格证编号(京)-经营性-2014-XXXX | 新出发京零 字第大XXX号</p>
+		<p class="footertxt">版权所有© Copyright XXXXXXXX | 消费者维权热线：4006067733 | 经营证照 | (京)网械平台备字(20XX)第000XX号 | 营业执照 | 增值电信业务经营许可证</p>
+		<p class="footertxt">网站备案：豫ICP备XXXXX号-X</p>
+    </div>
+	<script type="text/javascript">
+		let flag=true
+		const navgation = document.querySelector(".navgation")
+        const mySwich=()=>{
+            if(flag){
+                $(".navbar").css("transform","translateX(200px)")
+				navgation.style.zIndex = "6"
+            }else{
+                $(".navbar").css("transform","translateX(0)")
+				navgation.style.zIndex = "9"
+            }
+            flag=!flag//菜单
+			
+        }
+	</script>
+	<script type="text/javascript">
+		const spread = document.querySelector("#spread")
+		const main2 = document.querySelectorAll(".main1.main2")
+		const footer = document.querySelector(".footer")
+		spread.addEventListener("click",function(){
+			for(let i = 0 ;i<main2.length;i++){
+				main2[i].style.display = "block"
+			}
+			footer.style.top = "900px"
+			spread.style.display = "none"
+		})
+	</script>
+	<script type="text/javascript">
+		// 随机推荐
+		let personArr = ['春笋', '京酱肉丝', '茄汁炒年糕', '紫菜蛋炒饭', '日式棉花瑞士卷']
+		let j = personArr.length
+		const suggest = document.querySelector("#suggest");
+		suggest.addEventListener("click", function(){
+			if(j <= 0){
+				suggest.innerHTML = "没有更多推荐了"
+				return;
+			}
+			let random = Math.floor(Math.random() * j);
+			suggest.innerHTML = personArr[random]
+			personArr.splice(random, 1)
+			j--
+		})
+		window.addEventListener("scroll",handle)
+		function handle(){
+			var oTop=document.body.scrollTop||document.documentElement.scrollTop
+			if(oTop>=200){
+				// 滑动条，滑动200像素后返回按钮出现
+				gotop.style.display="block"
+			}
+			else{
+				gotop.style.display="none"
+			}
+			gotop.onclick=function(){
+				window.scrollTo({
+					top:0,
+					behavior:"smooth"//返回顶部
+				})
+			}
+		}
+	</script>
+</body>
+</html>

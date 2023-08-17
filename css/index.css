@@ -1,0 +1,580 @@
+body{
+    margin: 0;
+    padding: 0;
+	height: 100vh;
+	width: 100vw;
+}
+li,ul{
+	list-style: none;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+
+div, span, p,table{
+	caret-color: transparent;
+}
+span{
+	cursor: pointer;
+}
+input{
+	list-style: none;
+}
+.navgation{
+	position:absolute;
+	top: 2vh;
+	right: 0;
+	width: 200px;
+	height: 500px;
+	z-index: 6;
+	overflow: hidden;
+}
+.navbar{
+	width: 200px;
+	height: 500px;
+	background-color: #c0c0fa;
+	transform: translateX(200px);
+	transition: 0.5s;
+}
+
+.menubox{
+	position: relative;
+	right:-140px;
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+}
+.userimg{
+	height: 70px;
+}
+.userimg img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	position: relative;
+	top: -30px;
+	right: -70px;
+}
+.menubox:hover{
+	cursor: pointer;
+}
+.userimg span{
+	position: relative;
+	left: -11%;
+}
+.setting ul,li{
+	font-size: 20px;
+	margin-top: 40px;
+	display: block;
+	padding: 0;
+}
+.setting span{
+	color: #0f0d0d;
+	margin: 40px;
+}
+.setting span:hover{
+	color: rgb(95, 138, 174);
+	border-bottom: 1px solid rgb(95, 138, 174);
+}
+
+.header{
+	width: 100vw;
+}
+.headerone{
+	height: 12vh;
+}
+.headertwo{
+	height: 10vh;
+}
+.logo{
+	position: absolute;
+	top: 3vh;
+	width: 50px;
+	height: 50px;
+}
+.title{
+	position: absolute;
+	text-align: center;
+	height: 2.6rem;
+	width: 12rem;
+	font-size: 2.6rem;
+	text-align: center;
+	top: 10px;
+    bottom: 0;
+    left: 3rem;
+    right: 0;
+}
+.search {
+	margin-left: 100px;
+	position: absolute;
+	left: 24vw;
+	top:3vh;
+}
+.search input {
+	width: 40vw;
+	height: 7vh;
+	border: 1px solid #22777C;
+	text-indent: 1em;
+	caret-color: rgb(41, 92, 201)
+}
+.searchlogo {
+	width: 50px;
+	height: 40px;
+    position: absolute;
+	right: 0;
+	bottom: calc(3.5vh - 20px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav{
+	position: relative;
+	width: 100vw;
+	height: 8vh;
+	background-color:#CCCCFF;
+	list-style: none;
+	z-index: 2;
+}
+
+.navlist li{
+	position: relative;
+	float: left;
+	top: -40px;
+	left: 50px;
+	height: 8vh;
+	text-align: center;
+	line-height: 8vh;
+	width: 15vw;
+	font-size: 1.4rem;
+}
+
+.navlist a{
+	color: #000;
+	display: block;
+}
+
+.navlist{
+	width: 70vw;
+	margin: auto;
+}
+
+.navlist a:hover{
+	background-color:rgb(105, 144, 144,0.4);
+}
+.main{
+	position: relative;
+	top: 5vh;
+	width: 100vw;
+	height: 120vh;
+}
+.mainone{
+	position: relative;
+	top: -115vh;
+	width:100vw;
+	height: 64vh;
+}
+.maintwo{
+	position:relative;
+	top:3vh;
+	left: 23vw;
+	width: 60vw;
+	height: 380px;
+}
+.tuijian{
+	position: relative;
+	left: 1vw;
+	width: 20vw;
+	height: 120vh;
+	background-color:#c0c0fa;
+	z-index: 3;
+}
+.tuijiantitle{
+	clear: both;
+	position: relative;
+	top: -2vh;
+	height:7vh;
+	text-align: center;
+	font-size: 2.6rem;
+	line-height: 5vh;
+}
+.food,.cookbook{
+	width: 90%;
+}
+.food{
+	height: 55vh;
+}
+.cookbook{
+	height: 50vh;
+}
+.tuijiantxt{
+	font-size: 1.4rem;
+	margin-bottom: 20px;
+}
+.tuijiantxt-a{
+	width: 19vw;
+	height: 8vh;
+	color: #000;
+	margin-top: 1.8vh;
+	margin-left: 1vw;
+	line-height: 3vh;
+	text-align: left;
+	font-size: 14px;
+}
+
+.tuijiantxt-a a:hover{
+	color: #d84a4a;
+	border-bottom:1px solid #d84a4a;
+}
+.lunbo{
+	position: relative;
+	left: 23vw;
+	width: 50vw;
+	height: 45vh;
+	background-color: #000;
+	z-index: 1;
+	padding: 0;
+}
+.lunbo-img-box{
+	position: relative;
+	width: 50vw;
+	height: 45vh;
+}
+.lunbo-img{
+	width: 50vw;
+	height: 45vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 1.5s;
+}
+.lunbo-img:nth-child(1){
+	opacity: 1;
+}
+.lunbo-img img{
+	width: 50vw;
+	height: 45vh;
+}
+.img-left{
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	background-color: #f2f2f2;
+	color: #ccc;
+	top:17vh;
+	border-radius:0 5px 5px 0;
+	text-align: center;
+	line-height: 60px;
+	font-size: 27px;
+}
+.img-left:hover{
+	background-color: #00000050;
+	color: aliceblue;
+	cursor: pointer;
+}
+.img-right{
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	background-color: #f2f2f2;
+	color: #ccc;
+	top:17vh;
+	right: 0;
+	border-radius:5px 0  0 5px;
+	text-align: center;
+	line-height: 60px;
+	font-size: 27px;
+}
+.img-right:hover{
+	background-color: #00000050;
+	color: aliceblue;
+	cursor: pointer;
+}
+.img-zhiding{
+	position: absolute;
+	bottom: 1.6vw;
+	right: 1.6vw;
+}
+.img-zhiding ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.img-zhiding li{
+	margin-right: 5px;
+	float: left; 
+	width: 1.6vmin;
+	height: 1.6vmin;
+	border-radius: 50%;
+	background-color: #ccc;
+}
+.img-zhiding li:hover{
+	background-color: #fff;
+}
+.img-zhiding li:nth-child(1){
+	background-color: #fff;
+}
+.video{
+	position: absolute;
+	top: -6vh;
+	left: 52vw;
+	width: 20vw;
+	height: 23vh;
+}
+video{
+	width: 20vw;
+	height: 20vh;
+	object-fit: cover;
+}
+.videoone{
+	position: relative;
+	width:20vw;
+	height: 23vh;
+	margin-top: 4vh;
+	margin-bottom: 5vh;
+}
+
+.videotwo{
+	position: relative;
+	width: 20vw;
+	height: 23vh;
+	margin-top: 4vh;
+	margin-bottom: 5vh;
+}
+.videotxt1{
+	text-align: left;
+	font-size: 1.2vw;
+	margin: 0;
+}
+.videotxt2{
+	position: relative;
+	top:-2vh;
+	text-align: right;
+	font-size: 1.5vw;
+}
+.videotxt2 a:hover{
+	color: red;
+}
+.paihang {
+	position: relative;
+	top: 2vh;
+	float: left;
+	/* 水平居中 */
+	margin:0;
+}
+
+.paihang h3 {
+	/* 设置文字不加粗 */
+	font-weight: 100;
+	height: 4vh;
+	line-height:4vh;
+}
+
+.paihang h3 span {
+	font-size:2.7vw;
+}
+
+.paihang h3 span i {
+	color: #00a7f6;
+	/* 去掉斜体效果 */
+	font-style: normal;
+}
+
+.paihang h3 a {
+	position: relative;
+	left: 0;
+	font-size: 1.2vw;
+	color: #569ebd;
+	z-index: 4;
+}
+.paihang a:hover{
+	color:red;
+}
+.paihang .item {
+	height: 16vh;
+	width: 70vw;
+	background-color: #f6f6f6;
+	margin-top: 3vh;
+}
+
+.paihang .item .item-img img {
+	float: left;
+	width: 16vh;
+	height: 16vh;
+	background-color: skyblue;
+}
+
+.paihang .item .item-text {
+	position: relative;
+	top: 1.6vh;
+	float: left;
+	width: 18vw;
+	height:12vh;
+	z-index: 6;
+	background:no-repeat right center;
+}
+
+
+/* ====== */
+.paihang .item h4 {
+	text-indent: 0.4em;
+	font-size: 1.8vw;
+	padding:0;
+	margin: 0;
+}
+
+.paihang .item .item-text p {
+	text-indent: 1.6em;
+	margin-top: 0.8em;
+	font-size:1.2vw;
+	color: #555;
+	line-height: 1.2vw;
+}
+
+.paihang .item .item-text p span {
+	color: #999;
+}
+
+.paihang .item .item-text p a {
+	color: #555;
+}
+
+.paihang .item .item-text p a:hover {
+	color: #ff627f;
+}
+
+.paihang .item .item-text p a:hover span {
+	color: #ff627f;
+}
+.mainthree{
+	position: relative;
+	top: -60vh;
+	width:100vw;
+	height: 400px;
+	
+}
+.article{
+	width: 70vw;
+	height: 400px;
+	position: absolute;
+	left: 0;
+	background-color: rgb(246, 232, 232);
+}
+.blogger{
+	position: absolute;
+	right: 0;
+}
+.mainthree h2{
+	position: relative;
+	top:1em;
+	left: 1vw;
+	margin: 0;
+}
+.article p{
+	position: absolute;
+	top: 1em;
+	left: 10em;
+}
+.article p:hover,.article a:hover{
+	color: #d84a4a;
+}
+.article li{
+	position: relative;
+	top: 40px;
+	height: 18px;
+	padding: 10px;
+	font-size: 1em;
+	width: 8em;
+	overflow:hidden;  /*内容会被修剪，并且其余内容是不可见的。*/
+    text-overflow: ellipsis;
+	white-space: nowrap;
+		/*文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。*/
+}
+.article li:hover{
+	overflow:visible;
+	z-index: 4;
+}
+.article a:hover{
+	text-align: left;
+	background-color: rgb(232, 208, 208);
+}
+
+.article ul{
+	width: 20vw;
+}
+.article table{
+	caret-color: rgba(0, 0, 0, 0);
+}
+.bloggertwo{
+	width: 24vw;
+	height: 400px;
+	background-color:rgb(192, 192, 250,0.8);
+	position: absolute;
+	right: 4vw;
+}
+.bloggertwo h2{
+	position: relative;
+	top: 0;
+}
+.bloggertwo img{
+	border-radius: 5px;
+}
+.bloggertwo>div{
+	width: 24vw;
+	margin-top: 14px;
+}
+.bloggertwo>div>span{
+	position: relative;
+	top: -30px;
+	white-space: nowrap;
+}
+.bloggertwo>div>button{
+	float: right;
+	width: 80px;
+	height: 30px;
+}
+.bloggertwo>div>div{
+	font-size: 1vw;
+	margin: 0;
+}
+.bloggertwo>p{
+	float: right;
+	margin: 0;
+}
+.blogger a:hover{
+	color: #d84a4a;
+}
+.bloggertwo>p:hover{
+	color: #d84a4a;
+}
+.footer{
+	position:relative;
+	top:580px;/*将此div下移*/
+	width: 100%;
+}
+@media (min-width: 2560px){
+	.footer{
+		position:relative;
+		top:640px;/*将此div下移*/
+		width: 100%;
+	}
+	}
+#gotop{
+	position:fixed;
+	width: 40px;
+	height: 40px;
+	right:30px;
+	bottom: 20px;
+	display: none;
+}
+#gotop img{
+	width: 40px;
+	height: 40px;
+}
+.footer p{
+	text-align: center;
+	font-size: 12px;
+	color: rgb(113, 112, 112);
+	line-height: 14px;
+}

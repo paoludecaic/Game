@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+	<link rel ="icon" href ="../images/logo.jpg" type ="image/x-icon"/>
+    <script src="../js/all.js"></script>
+	<title>Web 静态网页</title>
+</head>
+<body>
+	<div>
+	<div class="header"> 
+		<div class="headerone">
+		<div class="logo"><img src="../images/logo.png" width="50px" height="50px"></div>
+		<!-- logo -->
+		<div class="title">美食天堂</div>
+		<div class="search">
+		<div >
+			<form> <!--  搜索框 -->	
+				 <input  type="text" style="border-radius: 12px;" placeholder="请输入你所要查询的内容">
+			 </form>
+		</div>	
+		 <div class="searchlogo">
+			<img src="../images/search1.png" width="30px" height="30px">
+		</div>
+		</div>
+		<div class="navgation">	
+			<!-- 菜单栏  隐藏部分通过js显示-->
+				<div class="menubox" onclick="mySwich()"><img class="menu" src="../images/menu.png" width="50px" height="50px"></div>
+				<div class="navbar">
+				<div class="userimg"><img src="../images/user.jpeg">
+					<!-- 用户头像 -->
+						<span>用户220134</span>
+				</div>
+				<div class="setting">
+					<ul>
+					<li><a href="index.html"><span>首页</span></a></li>
+					<li><a href="#"><span>我的收藏</span></a></li>
+					<li><a href="gwc.html"><span>购物车</span></a></li>
+					<li><a href="setting.html"><span>个人主页</span></a></li>
+					<li><a href="denglu.html"><span>退出登录</span></a></li>
+					</ul>
+				</div>
+				</div>
+			  </div> 
+		</div>
+		<div class="headertwo">
+		<div style="height: 20px;"></div>
+		<div class="nav">
+			<!-- 导航栏部分 -->
+			<div class="navlist">
+			<li>
+				<a href="index.html">首页</a>
+			</li>
+			<li>
+				<a href="tuijian.html">推荐</a>	
+			</li>
+			<li>
+				<a href="#">排行</a>
+			</li>
+			<li>
+				<a href="fenlei.html" >分类</a>
+			</li>
+			</div>
+		</div>
+		</div>
+	</div>
+    <div class="main">
+		<!-- 主题 -->
+		<div>
+			<div class="tuijian">
+				<div class="tuijiantitle">每日推荐</div>
+				<!-- 侧边推荐部分，-->
+				<div class="food">
+					<div class="tuijiantxt">最新推荐菜肴</div>
+					<div class="tuijiantxt-a"><a href="#">五香鸡爪</a></div>
+					<div class="tuijiantxt-a"><a href="#">菠菜炒蒸红萝卜丝</a></div>
+					<div class="tuijiantxt-a"><a href="#">四季豆腊肠焖饭</a></div>
+					<div class="tuijiantxt-a"><a href="#">山药胡萝卜鸡丁</a></div>
+					<div class="tuijiantxt-a"><a href="#">网红雪花酥</a></div>
+					
+				</div>
+				<div class="cookbook">
+					<div class="tuijiantxt">最新推荐菜谱</div>
+					<div class="tuijiantxt-a"><a href="tuijian.html">口水鸡</a></div>
+					<div class="tuijiantxt-a"><a href="tuijian.html">牛肉面</a></div>
+					<div class="tuijiantxt-a"><a href="tuijian.html">煎饼</a></div>
+					<div class="tuijiantxt-a"><a href="tuijian.html">番茄豆腐</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="mainone">
+		<div class="lunbo">
+			<div class="lunbo-img-box">
+				<!-- 轮播图部分 -->
+				<div class="lunbo-img"><img src="../images/A1.jpg"></div>
+				<div class="lunbo-img"><img src="../images/A2.png"></div>
+				<div class="lunbo-img"><img src="../images/A3.jpg"></div>
+				<div class="lunbo-img"><img src="../images/A4.jpg"></div>
+				<div class="lunbo-img"><img src="../images/A5.jpeg"></div>
+				<!-- 用大小号作为切换的按钮 -->
+			<div class="img-left">&lt;</div>
+			<div class="img-right">&gt;</div>
+			<div class="img-zhiding">
+				<ul>
+					<!-- 轮播图下方的小圆点 -->
+					<li class="img-button"></li>
+					<li class="img-button"></li>
+					<li class="img-button"></li>
+					<li class="img-button"></li>
+					<li class="img-button"></li>
+				</ul>
+			</div>
+			</div>
+		<div class="video">
+			<!-- 轮播图右边视频部分-->
+				<div class="videoone">
+					<video controls muted controlslist="nodownload noremoteplayback noplaybackrate" autoplay disablePictureInPicture><source src="../images/video1.mp4" type="video/mp4" ></video>
+				<pre class="videotxt1">那些年我们吃过的面条是怎么出现的？</pre>
+				<pre class="videotxt1">制作人：奇怪的探寻者</pre>
+				</div>
+				<div class="videotwo">
+					<video controls muted controlslist="nodownload noremoteplayback noplaybackrate" autoplay disablePictureInPicture><source src="../images/video2.mp4" type="video/mp4" ></video>
+					<pre class="videotxt1">少数民族的食俗是如何形成的</pre>
+					<pre class="videotxt1">制作人：中国习俗指南</pre>
+				</div>
+				<div class="videotxt2"><a href="#">查看更多</a></div>
+			</div>
+		</div>
+		<div class="maintwo">
+			<div class="paihang">
+				<!-- 榜单部分 -->
+				<h3>
+					<span><i>热门</i>榜单</span>
+					<a href="#">更多</a>
+				</h3>
+				<div class="item">
+					<!-- 包括这个有三个，这种class属性的，都是右面蓝色图片待填区域 -->
+					<div class="item-img">
+						<a href="https://home.meishichina.com/recipe-257755.html">
+							<img src="../images/C1.jpg">
+						</a>
+					</div>
+					<h4>热门美食</h4>
+					<!-- 榜单文字部分 -->
+					<div class="item-text">
+						<p><a href="https://home.meishichina.com/recipe-257755.html" target="_blank">1 . 佛跳墙-<span>夏雨暮秋</span></a></p>
+						<p><a href="https://home.meishichina.com/recipe-648367.html" target="_blank">2 . 蔓越莓饼干-<span>几方</span></a></p>
+					</div>
+					<div class="item-text">
+						<p><a href="https://home.meishichina.com/recipe-205310.html" target="_blank">3 .马卡龙 -<span>小智</span></a></p>
+						<p><a href="https://home.meishichina.com/recipe-39572.html" target="_blank">4 . 辣子鸡-<span>赛菲</span></a></p>
+					</div>
+					<div class="item-text">
+						<p><a href="https://home.meishichina.com/recipe-648347.html" target="_blank">5 . 手撕鸡-<span>两米阳光9</span></a></p>
+						<p><a href="https://home.meishichina.com/recipe-30306.html" target="_blank">6 . 龙井虾仁-<span>蓝晶翎</span></a></p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-img">
+						<a href="https://home.meishichina.com/recipe-172608.html">
+							<img src="../images/C2.jpeg">
+						</a>
+					</div>
+					<h4>应季美食</h4>
+					<!-- 榜单文字部分 -->
+					<div class="item-text">
+						<p><a href="https://home.meishichina.com/recipe-319338.html" target="_blank">1 . 香椿鸡蛋煎饼-<span>清水鱼翅</span></a></p>
+						<p><a href="https://home.meishichina.com/recipe-324766.html" target="_blank">2 . 虾干炒蕨菜-<span>火镀红叶</span></a></p>
+					</div>
+					<div class="item-text">
+						<p><a href="https://home.meishichina.com/recipe-167612.html" target="_blank">3 . 荠菜拌香干-<span>辽南蟹</span></a></p>
+						<p><a href="https://home.meishichina.com/recipe-116380.html" target="_blank">4 . 凉拌豌豆尖-<span>咖啡金色</span></a></p>
+					</div>
+					<div class="item-text">
+						<p><a href="https://home.meishichina.com/recipe-257028.html" target="_blank">5 . 果仁菠菜-<span>tgcyy</span></a></p>
+						<p><a href="https://home.meishichina.com/recipe-441585.html" target="_blank">6 . 银芽炒肉丝-<span>我叫一尾鱼</span></a></p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-img">
+						<a href="https://home.meishichina.com/recipe-370383.html">
+							<img src="../images/C3.png" >
+						</a>
+					</div>
+					<h4>最多收藏</h4>
+					<!-- 榜单文字部分 -->
+					<div class="item-text">
+						<p><a href="https://home.meishichina.com/recipe-30306.html" target="_blank">1 . 龙井虾仁-<span>蓝晶翎</span></a></p>
+						<p><a href="https://home.meishichina.com/recipe-167612.html" target="_blank">2 . 荠菜拌香干-<span>辽南蟹</span></a></p>
+					</div>
+					<div class="item-text">
+						<p><a href="https://home.meishichina.com/recipe-257755.html" target="_blank">3 . 佛跳墙-<span>夏雨暮秋</span></a></p>
+						<p><a href="https://home.meishichina.com/recipe-648367.html" target="_blank">4 . 蔓越莓饼干-<span>几方</span></a></p>
+					</div>
+					<div class="item-text">
+						<p><a href="https://home.meishichina.com/recipe-257028.html" target="_blank">5 . 果仁菠菜-<span>tgcyy</span></a></p>
+						<p><a href="https://home.meishichina.com/recipe-441585.html" target="_blank">6 . 银芽炒肉丝-<span>我叫一尾鱼</span></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+    	</div>
+		<div class="mainthree">
+			<!-- 轮播图下方文章推荐部分 -->
+			<div class="article">
+				<h2>精彩主题文章</h2>
+				<p><a href="#">更多</a>&gt;</p>
+				<table>
+				<tr>
+			<td>
+				<ul>
+					<li><a href="https://www.douguo.com/article/detail/4083">200元一斤的草莓？这个红遍全日本的奶茶品牌上新， 原料简直壕无人性！</a></li>
+					<li><a href="https://www.douguo.com/article/detail/4082">健康开心果，全民开心GO！</a></li>
+					<li><a href="https://www.douguo.com/article/detail/4081">美国开心果陪你一起打破格局，助燃今夏</a></li>
+				</ul>	
+			</td>
+			<td>
+				<ul>
+					<li><a href="https://www.douguo.com/article/detail/4080">时光淬炼的“蔓“妙滋味</a></li>
+					<li><a href="https://www.douguo.com/article/detail/4079">乐享厨卫清洁的日式美学--“花王厨卫清洁系列”全新上市</a></li>
+					<li><a href="https://www.douguo.com/article/detail/4078">健康专家郑育龙教您如何用橄榄油吃出健康</a></li>
+				</ul>
+			</td>
+			<td>
+				<ul>
+					<li><a href="https://www.douguo.com/article/detail/4077">健康领鲜，臻享美好生活” 松下风冷无霜三门冰箱阵容全新上市</a></li>
+					<li><a href="https://www.douguo.com/article/detail/4073">欧洲美食艺术·意大利果蔬精品：源自意大利大地之礼</a></li>
+					<li><a href="https://www.douguo.com/article/detail/4072">上海首家omakase放题餐厅亮相，带你解锁超高阶日式盛宴！</a></li>
+				</ul>
+			</td>
+				</tr>
+			</table>
+			</div>
+			<div class="blogger">
+				<!-- 美食达人用户部分 -->
+				<div class="bloggertwo">
+					<h2>美食达人</h2>
+					<div><img src="../images/test.png" width="50px" height="50px"><span>用户名</span><button>+关注</button><div>粉丝数:</div></div>
+					<div><img src="../images/test.png" width="50px" height="50px"><span>用户名</span><button>+关注</button><div>粉丝数:</div></div>
+					<div><img src="../images/test.png" width="50px" height="50px"><span>用户名</span><button>+关注</button><div>粉丝数:</div></div>
+					<div><img src="../images/test.png" width="50px" height="50px"><span>用户名</span><button>+关注</button><div>粉丝数:</div></div>
+					<p><a href="#">更多</a>&gt;</p>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="footer">
+		<div id="gotop"><img src="../images/return.jpg"></div>
+		<!-- 返回顶部的按钮，用了图片为引导-->
+		<p class="footertxt">本网站只用于学习用途，不参与任何商业活动,如有需要请发送信息至我们的邮箱</p>
+    </div>
+	<script type="text/javascript">
+		let flag=true
+        const mySwich=()=>{
+            if(flag){
+                $(".navbar").css("transform","translateX(200px)")
+            }else{
+                $(".navbar").css("transform","translateX(0)")
+            }
+            flag=!flag//菜单
+        }
+			$(function(){
+				var index=0;//标记图片索引，轮播图
+				setInterval(function(){
+					if(index==$(".lunbo-img").length-1){
+						index=0;
+						$(".lunbo-img").css("opacity","0");
+						$(".lunbo-img").eq(index).css("opacity","1");
+						$(".img-button").css("background-color","#ccc");
+						$(".img-button").eq(index).css("background-color","#fff");
+					}
+					else{
+						index++;
+						$(".lunbo-img").css("opacity","0");
+						$(".lunbo-img").eq(index).css("opacity","1");
+						$(".img-button").css("background-color","#ccc");
+						$(".img-button").eq(index).css("background-color","#fff");
+					}
+				},4000)
+				$(".img-left").click(function(){
+					if(index==0){
+						index=$(".lunbo-img").length-1;
+						$(".lunbo-img").css("opacity","0");
+						$(".lunbo-img").eq(index).css("opacity","1");
+						$(".img-button").css("background-color","#ccc");
+						$(".img-button").eq(index).css("background-color","#fff");
+					}
+					else{
+						index--;
+						$(".lunbo-img").css("opacity","0");
+						$(".lunbo-img").eq(index).css("opacity","1");
+						$(".img-button").css("background-color","#ccc");
+						$(".img-button").eq(index).css("background-color","#fff");
+					}
+				})
+				$(".img-right").click(function(){
+					if(index==$(".lunbo-img").length-1){
+						index=0;
+						$(".lunbo-img").css("opacity","0");
+						$(".lunbo-img").eq(index).css("opacity","1");
+						$(".img-button").css("background-color","#ccc");
+						$(".img-button").eq(index).css("background-color","#fff");
+					}
+					else{
+						index++;
+						$(".lunbo-img").css("opacity","0");
+						$(".lunbo-img").eq(index).css("opacity","1");
+						$(".img-button").css("background-color","#ccc");
+						$(".img-button").eq(index).css("background-color","#fff");
+					}
+				})
+				$(".img-button").click(function(){
+					var indexx=$(this).index();
+					index=indexx;
+					$(".lunbo-img").css("opacity","0");
+					$(".lunbo-img").eq(index).css("opacity","1");
+					$(".img-button").css("background-color","#ccc");
+					$(".img-button").eq(index).css("background-color","#fff");
+				})
+
+			})	
+			window.addEventListener("scroll",handle)
+		function handle(){
+			var oTop=document.body.scrollTop||document.documentElement.scrollTop
+			if(oTop>=200){
+				gotop.style.display="block"
+			}
+			else{
+				gotop.style.display="none"
+			}
+			gotop.onclick=function(){
+				window.scrollTo({
+					top:0,
+					behavior:"smooth"//返回顶部
+				})
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>推荐菜肴</title>
+		<link rel="stylesheet" type="text/css" href="../css/tujian.css"/>
+		<link rel ="icon" href ="../images/logo.jpg" type ="image/x-icon"/>
+	</head>
+	<body>
+		<div class="header"> 
+			<div class="headerone">
+			<div class="logo"><img src="../images/logo.png" width="50px" height="50px"></div>
+			<!-- logo -->
+			<div class="title">美食天堂</div>
+			<div class="search">
+			<div>
+				<form> <!--  搜索框 -->	
+					 <input  type="text" style="border-radius: 12px;" placeholder="请输入你所要查询的内容">
+				 </form>
+			</div>	
+			 <div class="searchlogo">
+				<img src="../images/search1.png" width="30px" height="30px">
+			</div>
+			</div>
+			<div class="navgation">	
+					<div class="menubox" onclick="mySwich()"><img class="menu" src="../images/menu.png" width="50px" height="50px"></div>
+					<div class="navbar">
+					<div class="userimg"><img src="../images/user.jpeg">
+						<!-- 用户头像 -->
+							<span>用户220134</span>
+					</div>
+					<div class="setting">
+						<ul>
+						<li><a href="index.html"><span>首页</span></a></li>
+						<li><a href="#"><span>我的收藏</span></a></li>
+						<li><a href="gwc.html"><span>购物车</span></a></li>
+						<li><a href="setting.html"><span>个人主页</span></a></li>
+						<li><a href="denglu.html"><span>退出登录</span></a></li>
+						</ul>
+					</div>
+					</div>
+				  </div> 
+			</div>
+			<div class="headertwo">
+			<div style="height: 20px;"></div>
+			<div class="nav">
+				<!-- 导航栏部分 -->
+				<div class="navlist">
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="tuijian.html">推荐</a>	
+				</li>
+				<li>
+					<a href="#">排行</a>
+				</li>
+				<li>
+					<a href="fenlei.html" >分类</a>
+				</li>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="main">
+			<!-- 右边文字推荐部分 -->
+			<div class="sidebar">
+				<table>
+					<tr>
+						<td colspan="3">
+							<p class="sidebarp">
+								热门专题
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button>南瓜粥</button>
+						</td>
+						<td>
+							<button>麻辣肉片</button>
+						</td>
+						<td>
+							<button>蒜茄子</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button>酱烧茄子</button>
+						</td>
+						<td>
+							<button>家常葱油饼</button>
+						</td>
+						<td>
+							<button>香辣鸡爪</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button>孔雀开屏</button>
+						</td>
+						<td>
+							<button>鱼香肉丝</button>
+						</td>
+						<td>
+							<button>抹茶慕斯</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button>煎馒头片</button>
+						</td>
+						<td>
+							<button>冰糖顿柠檬</button>
+						</td>
+						<td>
+							<button>杏鲍菇炒牛肉</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button>红烧鳝鱼 </button>
+						</td>
+						<td>
+							<button>五花肉炖豆角</button>
+						</td>
+						<td>
+							<button>蚝油茄子</button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<p class="sidebarp">
+								最受欢迎的家常菜
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button>红烧肉</button>
+						</td>
+						<td>
+							<button>红烧茄子</button>
+						</td>
+						<td>
+							<button>红烧鱼</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button>鱼香肉丝</button>
+						</td>
+						<td>
+							<button>可乐鸡翅</button>
+						</td>
+						<td>
+							<button>宫保鸡丁</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button>红烧排骨</button>
+						</td>
+						<td>
+							<button>糖醋排骨</button>
+						</td>
+						<td>
+							<button>水煮肉片</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button>佛跳墙</button>
+						</td>
+						<td>
+							<button>麻婆豆腐</button>
+						</td>
+						<td>
+							<button>麻辣香锅</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button>年夜饭</button>
+						</td>
+						<td>
+							<button>瘦身</button>
+						</td>
+						<td>
+							<button>补气血</button>
+						</td>
+					</tr>
+				</table>
+
+			</div>
+			<!-- 主要推荐部分 -->
+			<div class="exhibition">
+				<hr />
+				<div class="exhibition-txt">
+					<h1>口水鸡</h1><hr  width="100px" align="left"/>
+					<p>原料：</p><hr  width="30px" align="left"/>
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						三黄鸡，盐，生抽，白糖，红油等
+					</p>
+					<hr />
+				</div>
+				
+				<div class="exhibition-img">
+					<img src="../images/ksj.jpg"/>
+				</div>
+				
+				<hr />
+			</div>
+			<div class="exhibition">
+				<hr />
+				<div class="exhibition-txt">
+					<h1>牛肉面</h1><hr  width="100px" align="left"/>
+					<p>原料：</p><hr  width="30px" align="left"/>
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						牛肋条，刀削面，生姜，大葱，八角，香叶等
+					</p>
+					
+					<hr />
+				</div>
+				
+				<div class="exhibition-img">
+					<img src="../images/nrm.jpg"/>
+				</div>
+				
+				<hr>
+			</div>
+			<div class="exhibition">
+				<hr />
+				<div class="exhibition-txt">
+					<h1>煎饼</h1><hr  width="100px" align="left"/>
+					<p>原料：</p><hr  width="30px" align="left"/>
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						面粉，鸡蛋，清水，胡萝卜，葱花，食用油等
+					</p>
+					
+					<hr />
+				</div>
+				
+				<div class="exhibition-img">
+					<img src="../images/jb.jpg"/>
+				</div>
+				
+				<hr>
+			</div>
+			<div class="exhibition">
+				<hr />
+				<div class="exhibition-txt">
+					<h1>番茄豆腐</h1><hr width="130px" align="left"/>
+					<p>原料：</p><hr  width="30px" align="left"/>
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						豆腐，西红柿，葱，水淀粉，油等
+					</p>
+					<hr />
+				</div>
+				<div class="exhibition-img">
+					<img src="../images/fqdf.jpg"/>
+				</div>
+				<hr>
+			</div>
+			<div class="exhibition">
+				<hr />
+				<div class="exhibition-txt">
+					<h1>五香芝麻烧饼</h1><hr  width="200px" align="left"/>
+					<p>原料：</p><hr  width="30px" align="left"/>
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						中筋面粉，酵母，泡打粉，白糖，盐，五香粉等
+					</p>
+					<hr />
+				</div>
+				
+				<div class="exhibition-img">
+					<img src="../images/wxzmb.jpg"/>
+				</div>
+				<hr>
+			</div>
+		</div>
+		
+	</body>
+</html>

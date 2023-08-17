@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="../css/gwc.css"/>
+	</head>
+	<body>
+		<div class="header"> 
+			<div class="headerone">
+			<div class="logo"><img src="../images/logo.png" width="50px" height="50px"></div>
+			<!-- logo -->
+			<div class="title">美食天堂</div>
+			<div class="search">
+			<div >
+				<form> <!--  搜索框 -->	
+					 <input  type="text" style="border-radius: 12px;" placeholder="请输入你所要查询的内容">
+				 </form>
+			</div>	
+			 <div class="searchlogo">
+				<img src="../images/search1.png" width="30px" height="30px">
+			</div>
+			</div>
+			<div class="navgation">	
+				<!-- 菜单栏  隐藏部分通过js显示-->
+					<div class="menubox" onclick="mySwich()"><img class="menu" src="../images/menu.png" width="50px" height="50px"></div>
+					<div class="navbar">
+					<div class="userimg"><img src="../images/user.jpeg">
+						<!-- 用户头像 -->
+							<span>用户220134</span>
+					</div>
+					<div class="setting">
+						<ul>
+						<li><a href="index.html"><span>首页</span></a></li>
+						<li><a href="#"><span>我的收藏</span></a></li>
+						<li><a href="gwc.html"><span>购物车</span></a></li>
+						<li><a href="setting.html"><span>个人主页</span></a></li>
+						<li><a href="html/denglu.html"><span>退出登录</span></a></li>
+						</ul>
+					</div>
+					</div>
+				  </div> 
+			</div>
+			<div class="headertwo">
+			<div style="height: 20px;"></div>
+			<div class="nav">
+				<!-- 导航栏部分 -->
+				<div class="navlist">
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="tuijian.html">推荐</a>	
+				</li>
+				<li>
+					<a href="#">排行</a>
+				</li>
+				<li>
+					<a href="fenlei.html" >分类</a>
+				</li>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="c2">
+				<div  class="c3">
+					<p class="p1">口水鸡</p>
+					<table   valign="middle" align="center" class="bgc">
+						<tr align="center" valign="middle">
+							<td colspan="2"  rowspan="6"></td>
+							<td rowspan="2"></td>
+							<td>单价</td>
+							<td>数量</td>
+							<td rowspan="2">总价</td>
+						</tr>
+						<tr align="center" valign="middle">
+							<td>50元/份</td>
+							<td>
+								<button class="reduce">减</button>
+								<input style="text-align: center;" type="text"  class="ln1" value="1">
+								<button class="add">加</button>
+							</td>
+						</tr>
+						<tr align="center" valign="middle">
+							<td></td>
+							<td style="font-size: 10px;font-family: '仿宋'; color: red;">促销</td>
+							<td style="font-size: 10px;font-family: '仿宋';color: red;">有货</td>
+							<td class="all" rowspan="3" style="text-align: center;">50元</td>
+						</tr>
+						<tr align="center" valign="middle">
+							<td style="text-indent: 1em;">菜品规格：一人份</td>
+							<td>1500g/份</td>
+							<td>目前剩余290份</td>
+						</tr>
+						<tr align="center" valign="middle">
+							<td>食品类别：熟食</td>
+							<td>热食</td>
+							<td></td>
+						</tr>
+						<tr align="center" valign="middle">
+							<td></td>
+							<td></td>
+							<td><button class="buy">购买</button></td>
+							<td><button class="b1">移除</button></td>
+						</tr>				
+					</table>		
+				</div>	
+				<div class="tp"><img src="../images/ksj.jpg"/></div>
+			</div>
+		</div>
+			<hr />
+			<div class="footer">
+				<p class="footertxt">本网站只用于学习用途，不参与任何商业活动,如有需要请发送信息至我们的邮箱</p>
+			</div>
+			<script>
+				const ln1  = document.querySelector(".ln1")
+				let a = ln1.value
+				console.log(a)
+				let add =document.querySelector(".add")
+				let reduce = document.querySelector(".reduce")
+				reduce.addEventListener("click",function(){
+					a--
+					ln1.value = a
+					let all = document.querySelector(".all")
+					all.innerHTML = `${a*50}元`
+				})
+				add.addEventListener("click",function(){
+					a++
+					ln1.value = a
+					let all = document.querySelector(".all")
+					all.innerHTML = `${a*50}元`
+				})
+				const buy = document.querySelector(".buy")
+				buy.addEventListener("click",function(){
+					alert('恭喜您，已完成完成购买！')
+				})
+			</script>
+			
+	</body>
+</html>
